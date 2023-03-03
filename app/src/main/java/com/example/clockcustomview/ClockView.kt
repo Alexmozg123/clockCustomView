@@ -1,9 +1,7 @@
 package com.example.clockcustomview
 
 import android.content.Context
-import android.content.res.Resources
 import android.graphics.Canvas
-import android.graphics.Color
 import android.graphics.Paint
 import android.graphics.Rect
 import android.util.AttributeSet
@@ -56,7 +54,6 @@ class ClockView : View {
         if (!isInit) {
             initClock()
         }
-        canvas.drawColor(Color.GRAY)
         drawCircle(canvas)
         drawCenter(canvas)
         drawNumeral(canvas)
@@ -108,7 +105,7 @@ class ClockView : View {
         paint?.let {
             it.reset()
             it.color = resources.getColor(R.color.black)
-            it.strokeWidth = 5f
+            it.strokeWidth = 8f
             it.style = Paint.Style.STROKE
             it.isAntiAlias = true
         }
