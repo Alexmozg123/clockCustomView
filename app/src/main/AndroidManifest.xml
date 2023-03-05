@@ -13,8 +13,10 @@
         android:theme="@style/Theme.ClockCustomView"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name=".ListOfCitiesActivity"
+            android:exported="true"
+            android:label="@string/title_activity_list_of_cities"
+            android:theme="@style/Theme.ClockCustomView.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
